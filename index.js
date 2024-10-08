@@ -12,7 +12,7 @@ app.use(cors());
 app.use(
   "/*",
   createProxyMiddleware({
-    target: "ws://localhost:5050/my/socket",
+    target: "wss://socketproxytest.onrender.com/my/socket",
     ws: true,
     changeOrigin: true,
   })
